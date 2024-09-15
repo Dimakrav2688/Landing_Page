@@ -1,0 +1,12 @@
+
+@media (max-width: 600px) {
+    .swiper {
+        margin-inline: 15px;
+    }
+}
+
+.swiper-slide {
+    width: fit-content;
+}
+
+
