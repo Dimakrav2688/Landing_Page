@@ -1,8 +1,6 @@
 import React from 'react';
 import Logo from '../../molecules/Logo';
-import LogoIcon from '../../assets/ProfileIcon.svg';
-import MenuIcon from '../../assets/MenuIcon.svg';
-import { Box, Toolbar, Typography, Container, Avatar, AppBar } from '@mui/material';
+import { Box, Toolbar, Container, AppBar } from '@mui/material';
 import { customColors } from '../../constants/colors';
 import MenuHeader from './MenuHeader';
 import MenuDropDown from './MenuDropDown';
