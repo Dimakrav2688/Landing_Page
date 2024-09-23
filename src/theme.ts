@@ -45,19 +45,14 @@ const theme = createTheme(
   {
     typography: {
       h4: {
-        fontSize: '36px',
-        '::before': {
-          fontWeight: 700,
-          color: customColors.darkBlue,
+        fontSize: '30px',
+        '@media (max-width:900px)': {
+          fontSize: '20px',
         },
-        '::after': {
-          fontWeight: 400,
-          color: customColors.mainBlack,
-        },
-        color: customColors.darkBlue,
-        '@media (max-width:1024px)': {
-          fontSize: '28px',
-          fontWeight: 400,
+      },
+      body2: {
+        '@media (max-width:600px)': {
+          fontSize: '12px',
         },
       },
     },

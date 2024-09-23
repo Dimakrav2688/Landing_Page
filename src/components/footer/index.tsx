@@ -14,12 +14,11 @@ const Footer = () => {
           display: 'flex',
           justifyContent: 'space-between',
           padding: {
-            xs: '26px 15px 75px 15px',
+            xs: '26px 15px 50px 15px',
             sm: '30px 30px 50px 30px ',
-            lg: '38px 50px 71px 50px',
+            lg: '38px 50px 50px 50px',
           },
           color: customColors.mainWhite,
-          fontSize: { xs: '20px', lg: '26px' },
         }}
       >
         <Box
@@ -32,8 +31,8 @@ const Footer = () => {
           <Box
             sx={{
               fontWeight: '700',
-              paddingBottom: { xs: '40px', sm: '47px', lg: '70px' },
-              fontSize: { xs: '21px', lg: '30px' },
+              paddingBottom: { xs: '25px', sm: '35px', lg: '40px' },
+              fontSize: { xs: '18px', lg: '20px' },
               userSelect: 'none',
             }}
           >
@@ -42,8 +41,8 @@ const Footer = () => {
           <Link underline="none" href={ROUTES.FAQ}>
             <Box
               sx={{
-                marginBottom: { xs: '45px', sm: '40px', lg: '60px' },
-                fontSize: { xs: '12px', sm: '18px', lg: '26px' },
+                marginBottom: { xs: '30px', sm: '30px', lg: '45px' },
+                fontSize: { xs: '12px', sm: '16px', lg: '18px' },
                 color: customColors.mainWhite,
               }}
             >
@@ -53,7 +52,7 @@ const Footer = () => {
           <Link underline="none" href={ROUTES.REQUEST_DEMO}>
             <Box
               sx={{
-                fontSize: { xs: '12px', sm: '18px', lg: '26px' },
+                fontSize: { xs: '12px', sm: '16px', lg: '18px' },
                 color: customColors.mainWhite,
               }}
             >
@@ -71,9 +70,9 @@ const Footer = () => {
           <Box
             sx={{
               fontWeight: '700',
-              paddingBottom: { xs: '40px', sm: '47px', lg: '70px' },
+              paddingBottom: { xs: '25px', sm: '35px', lg: '40px' },
               userSelect: 'none',
-              fontSize: { xs: '21px', lg: '30px' },
+              fontSize: { xs: '18px', lg: '20px' },
             }}
           >
             Contact
@@ -81,7 +80,7 @@ const Footer = () => {
           <Link underline="none" href={ROUTES.GET_IN_TOUCH}>
             <Box
               sx={{
-                fontSize: { xs: '12px', sm: '18px', lg: '26px' },
+                fontSize: { xs: '12px', sm: '16px', lg: '18px' },
                 color: customColors.mainWhite,
               }}
             >
@@ -93,16 +92,15 @@ const Footer = () => {
           sx={{
             display: 'flex',
             flexDirection: 'column',
-
             textAlign: 'start',
           }}
         >
           <Box
             sx={{
               fontWeight: '700',
-              paddingBottom: { xs: '40px', sm: '47px', lg: '70px' },
+              paddingBottom: { xs: '25px', sm: '35px', lg: '40px' },
               userSelect: 'none',
-              fontSize: { xs: '21px', lg: '30px' },
+              fontSize: { xs: '18px', lg: '20px' },
             }}
           >
             Legal
@@ -116,13 +114,34 @@ const Footer = () => {
             }}
           >
             <Link underline="none" href={ROUTES.TERMS_OF_USE}>
-              <Box sx={{ color: customColors.mainWhite }}>Terms of Use</Box>
+              <Box
+                sx={{
+                  color: customColors.mainWhite,
+                  fontSize: { xs: '12px', sm: '16px', lg: '18px' },
+                }}
+              >
+                Terms of Use
+              </Box>
             </Link>
             <Link underline="none" href={ROUTES.PRIVACY_POLICY}>
-              <Box sx={{ color: customColors.mainWhite }}>Privacy Policy</Box>
+              <Box
+                sx={{
+                  color: customColors.mainWhite,
+                  fontSize: { xs: '12px', sm: '16px', lg: '18px' },
+                }}
+              >
+                Privacy Policy
+              </Box>
             </Link>
             <Link underline="none" href={ROUTES.COOKIES}>
-              <Box sx={{ color: customColors.mainWhite }}>Cookies</Box>
+              <Box
+                sx={{
+                  color: customColors.mainWhite,
+                  fontSize: { xs: '12px', sm: '16px', lg: '18px' },
+                }}
+              >
+                Cookies
+              </Box>
             </Link>
           </Box>
         </Box>

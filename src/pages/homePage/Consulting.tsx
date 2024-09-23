@@ -16,22 +16,22 @@ const Consulting = () => {
         },
       }}
     >
-      <Typography
-        variant="h4"
-        sx={{
-          width: '100%',
-          textAlign: 'start',
-          boxSizing: 'border-box',
-          paddingLeft: { xs: '5px', sm: '24px', lg: '30px' },
-          position: 'relative',
-          '::before': {
-            content: '"Consulting:"',
-          },
-          '::after': {
-            content: '"  Meet Your Needs, Empower Growth"',
-          },
-        }}
-      />
+      <Box sx={{ textAlign: 'start', paddingInline: { xs: '10px', md: '0px' } }}>
+        <Box
+          component={'span'}
+          sx={{
+            width: '100%',
+            fontSize: { xs: '20px', md: '26px' },
+            fontWeight: { xs: 400, md: 700 },
+            color: customColors.darkBlue,
+          }}
+        >
+          Consulting:{' '}
+          <Box component={'span'} sx={{ color: customColors.mainBlack, fontWeight: 400 }}>
+            Meet Your Needs, Empower Growth
+          </Box>
+        </Box>
+      </Box>
       <Box
         sx={{
           display: 'flex',
@@ -39,7 +39,7 @@ const Consulting = () => {
           flexDirection: { xs: 'column', sm: 'row' },
           alignItems: { xs: 'center', lg: 'flex-start' },
           gap: { xs: 0, sm: '51px', lg: '221px' },
-          paddingTop: { xs: '124px', sm: '61px', lg: ' 79px' },
+          paddingTop: { xs: '70px', sm: '61px', lg: ' 79px' },
         }}
       >
         <Box
@@ -66,9 +66,9 @@ const Consulting = () => {
           }}
         >
           <Typography
+            variant={'body2'}
             sx={{
               color: customColors.mainBlack,
-              fontSize: { xs: '16px', lg: '24px' },
               textAlign: 'start',
               paddingInline: { xs: '20px', sm: '0' },
             }}
@@ -79,11 +79,12 @@ const Consulting = () => {
             experiences.
           </Typography>
           <Typography
+            variant={'body2'}
             sx={{
               color: customColors.mainBlack,
-              fontSize: { sx: '16px', lg: '24px' },
               textAlign: 'start',
               paddingInline: { xs: '20px', sm: '0' },
+              fontSize: { md: '16px' },
             }}
           >
             Excessive investment of time in writing support documentation, lack of documentation, or

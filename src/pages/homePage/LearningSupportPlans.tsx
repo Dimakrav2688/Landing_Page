@@ -9,25 +9,25 @@ const LearningSupportPlans = () => {
       sx={{
         backgroundColor: customColors.mainTextBackGroundColor,
         margin: { xs: '50px 10px 0', sm: '93px 10px 0', lg: '130px 10px 0' },
-        padding: { xs: '10px 25px 50px 10px', sm: '30px 54px 48px', lg: '25px 76px 100px 55px' },
+        padding: { xs: '10px 25px 50px 10px', sm: '30px 54px 48px', lg: '25px 76px 55px 55px' },
       }}
     >
-      <Typography
-        variant="h4"
-        sx={{
-          width: '100%',
-          textAlign: 'start',
-          boxSizing: 'border-box',
-          paddingLeft: { xs: '5px', sm: '8px', lg: '20px' },
-          position: 'relative',
-          '::before': {
-            content: '"Learning Support Plans:"',
-          },
-          '::after': {
-            content: '" Experience Efficiency, Elevate Quality"',
-          },
-        }}
-      />
+      <Box sx={{ textAlign: 'start', paddingInline: { xs: '10px', md: '0px' } }}>
+        <Box
+          component={'span'}
+          sx={{
+            width: '100%',
+            fontSize: { xs: '20px', md: '26px' },
+            color: customColors.darkBlue,
+          }}
+        >
+          Learning Support Plans:{' '}
+          <Box component={'span'} sx={{ color: customColors.mainBlack, fontWeight: 400 }}>
+            Experience Efficiency, Elevate Quality
+          </Box>
+        </Box>
+      </Box>
+
       <Box
         sx={{
           display: 'flex',
@@ -35,7 +35,7 @@ const LearningSupportPlans = () => {
           flexDirection: { xs: 'column-reverse', sm: 'row' },
           alignItems: 'center',
           gap: { xs: '22px', sm: '40px' },
-          paddingTop: { xs: '74px', sm: '71px', lg: ' 118px' },
+          paddingTop: '30px',
         }}
       >
         <Box
@@ -52,9 +52,9 @@ const LearningSupportPlans = () => {
           }}
         >
           <Typography
+            variant={'body2'}
             sx={{
               color: customColors.mainBlack,
-              fontSize: { xs: '16px', lg: '24px' },
               textAlign: 'start',
             }}
           >
@@ -63,11 +63,13 @@ const LearningSupportPlans = () => {
             progress, and exchange feedback, thereby promoting more targeted and effective learning
             experiences.
           </Typography>
+
           <Typography
+            variant={'body2'}
             sx={{
               color: customColors.mainBlack,
-              fontSize: { sx: '16px', lg: '24px' },
               textAlign: 'start',
+              fontSize: { md: '16px' },
             }}
           >
             Excessive investment of time in writing support documentation, lack of documentation, or
@@ -82,8 +84,8 @@ const LearningSupportPlans = () => {
           src={LearningSupportPlansStudent}
           alt={'Learning Support'}
           sx={{
-            width: { xs: '211px', md: '221px', lg: '311px' },
-            height: { xs: '228px', md: '228px', lg: '321px' },
+            width: { xs: '211px', md: '221px', lg: '300px' },
+            height: { xs: '228px', md: '228px', lg: '300px' },
             pointerEvents: 'none',
           }}
         />

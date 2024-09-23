@@ -26,7 +26,7 @@ const MenuHeader = () => {
           <Link underline="none" key={pageItem.id} href={pageItem.path} sx={{}}>
             <Box
               sx={{
-                fontSize: { md: 'px16', lg: '22px' },
+                fontSize: { md: '16px', lg: '22px' },
                 fontWeight: isActive ? 700 : 400,
                 color: isActive ? customColors.darkBlue : 'inherit',
               }}

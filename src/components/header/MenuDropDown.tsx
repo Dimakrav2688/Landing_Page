@@ -68,8 +68,14 @@ const MenuDropDown = () => {
           cursor: 'pointer',
         }}
       >
-        <Avatar sx={{ width: 33, height: 33 }} alt="Remy Sharp" src={LogoIcon} />
-        <Typography sx={{ color: customColors.mainPurple, userSelect: 'none' }}>
+        <Avatar sx={{ width: 30, height: 30 }} alt="Remy Sharp" src={LogoIcon} />
+        <Typography
+          sx={{
+            color: customColors.mainPurple,
+            userSelect: 'none',
+            fontSize: { md: '16px', lg: '22px' },
+          }}
+        >
           Create Account
         </Typography>
       </Box>

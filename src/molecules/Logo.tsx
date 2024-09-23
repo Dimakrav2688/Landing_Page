@@ -19,8 +19,9 @@ const Logo = () => {
         src={LogoIcon}
         alt={'logo'}
         sx={{
-          width: { xs: 50, lg: 70 },
-          height: { xs: 50, lg: 70 },
+          width: { xs: 50, lg: 60 },
+          height: { xs: 50, lg: 55 },
+
           margin: '0 auto',
           pointerEvents: 'none',
         }}
@@ -30,7 +31,7 @@ const Logo = () => {
           color: customColors.mainPurple,
           fontFamily: 'Lato, sans-serif',
           fontWeight: 400,
-          fontSize: { xs: '18px', lg: '26px' },
+          fontSize: { xs: '18px', lg: '20px' },
         }}
       >
         SenseiEdu
