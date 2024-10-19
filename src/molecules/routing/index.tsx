@@ -12,6 +12,7 @@ import GetInTouch from '../../pages/getInTouch';
 import InformationBannerGetInTouch from '../../pages/getInTouch/InformationBannerGetInTouch';
 import QuestionsAndAnswers from '../../pages/questionsAndAnswers';
 import InformationBannerFAQ from '../../pages/questionsAndAnswers/InformationBannerFAQ';
+import { Button, Typography } from '@mui/material';
 
 export const router = createBrowserRouter([
   {
@@ -66,7 +67,27 @@ export const router = createBrowserRouter([
     path: ROUTES.ERROR,
     element: (
       <PageWrapper>
-        <> Not existing page. Something went wrong </>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexDirection: 'column',
+            gap: '40px',
+            height: '400px',
+            width: '100%',
+          }}
+        >
+          <Typography sx={{ fontSize: '32px', fontWeight: 600 }}>
+            Not existing page. Something went wrong
+          </Typography>
+          <Button
+            onClick={() => (window.location.href = '/')}
+            sx={{ fontSize: '20px', fontWeight: 600 }}
+          >
+            Go back to home
+          </Button>
+        </div>
       </PageWrapper>
     ),
   },
